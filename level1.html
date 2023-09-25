@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Игра на поиск предметов</title>
+        <link rel="stylesheet" type="text/css" href="../css/font.css">
+    </head>
+    <body>
+
+        <div class = "panel">
+
+            <div class = "words" id="list"></div>
+            <div class = "act">
+                <button class = "settings" onclick = "settings()">Настройки</button>
+                <button class = "menu" onclick = "menu()">Меню</button>
+            </div>
+
+
+        </div>
+        
+
+        <div class="ground">
+            <img class="item" id="das Buch" src="../img/lvl1/book.png" alt="Книга">
+            <img class="item" id="die Chipsen" src="../img/lvl1/chips.jpg" alt="Книга">
+            <img class="item" id="der Krokus" src="../img/lvl1/crocus.jpg" alt="Книга">
+            <img class="item" id="das Ulybka" src="../img/lvl1/smile.gif" alt="Книга">
+        </div>
+        
+        <script src="../js/found.js"></script>
+        <script>
+            function menu(){document.location='menu.html'}
+            function settings(){document.location='settings.html'}
+        </script>
+    </body>
+</html>
