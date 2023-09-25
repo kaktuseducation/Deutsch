@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link rel="stylesheet" type="text/css" href="../css/font.css">
+    <body>
+        <div class="img_container"></div>
+        <div class="menu">
+            <button class="game" onclick= "game()">Играть</button>
+            <button class="settings" onclick= "settings()">Настройки</button>
+        </div>
+
+        
+    </body>
+    
+    <script>
+        localStorage.setItem('ref', 'index.html');
+
+        function settings(){document.location='settings.html'}
+        function game(){document.location='map.html'}
+    </script>
+</html>

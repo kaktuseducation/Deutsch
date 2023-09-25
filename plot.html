@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+        <link rel="stylesheet" type="text/css" href="../css/font.css">
+    <body>
+        <div class = "content"></div>
+        <div class = "act">
+            <button class = "settings" onclick = "settings()">Настройки</button>
+            <button class = "menu" onclick = "menu()">Меню</button>
+            <button class = "next" onclick = "next()">Далее</button>
+        </div>
+
+        <script>
+            let c = 0;
+            localStorage.setItem('ref', 'plot.html');
+            
+            function menu(){document.location='index.html'}
+            function settings(){document.location='settings.html'}
+            function next()
+            {
+                c += 1;
+                alert(c);
+                if (c==3) {document.location='levels/level1.html'}
+
+            }
+            
+        </script>
+        
+    </body>
+</html>
