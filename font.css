@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'gotic';
+    src: url('BODY.otf') format('opentype');
+}
+
+@font-face {
+     font-family: 'magic';
+     src: url('HEAD.ttf') format('truetype');
+}
