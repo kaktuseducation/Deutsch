@@ -42,6 +42,7 @@ body{
     outline: none;
     background-color: transparent;
     letter-spacing: 0.5vw;
+    color: #29231E;
 }
 
 .act button:hover{
