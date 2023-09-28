@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.about{
+    background: lightgrey;
+    height: 15vh;
+    width: 26%;
+    position: relative;
+}
+
+.about p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.act{
+    background: rgb(91, 156, 58);
+    height: 15vh;
+    width: 74%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.map{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 140px;
+}
+
+.settings{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+}
+
+.menu{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.symbol{
+    background: lightblue;
+    height: 85vh;
+    width: 26%;
+    position: relative;
+}
+
+.flag{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+}
+
+.emblem{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+}
+
+.artefact{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px;
+}
+
+.content{
+    background: rgb(79, 105, 130);
+    height: 85vh;
+    width: 74%;
+    position: absolute;
+    right: 0;
+    top: 15%;
+}

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 85vh;
+    width: 100%;
+    background: gray;
+    position: static;
+}
+
+.act{
+    height: 15vh;
+    background: lightblue;
+    position: relative;
+}
+
+.settings{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform:translateY(-50%);
+
+}
+
+.menu{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 110px;
+
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+
+}

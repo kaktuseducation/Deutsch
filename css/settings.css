@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.img_container{
+    height: 100vh;
+    width: 50%;
+    background: grey;
+}
+
+.settings{
+    height: 100vh;
+    width: 50%;
+    background: lightgray;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.sound{
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    background: lightgreen;
+    top: 20%;
+}
+
+.label_sound{
+    height: 10vh;
+    width: 30%;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+}
+
+.volume{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    
+}
+
+.difficulty{
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    background: lightgreen;
+    top: 50%;
+}
+
+.label_difficulty{
+    height: 10vh;
+    width: 30%;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+}
+
+.hard{
+    height: 12vh;
+    width: 30%;
+    background: green;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+
+}
+
+.act{
+    height: 17vh;
+    width: 50%;
+    position: absolute;
+    background: lightgreen;
+    bottom: 0;
+    right: 0;
+}
+
+.back{
+    height: 5vh;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 5%;
+    transform: translateY(-50%);
+}

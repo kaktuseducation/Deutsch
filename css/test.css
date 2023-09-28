@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.act{
+    height: 15vh;
+    background: grey;
+    position: relative;
+}
+
+.settings{
+    position: absolute;
+}
+
+.menu{
+    position: absolute;
+}
+
+.content{
+    height: 40vh;
+    background: lightgray;
+}
+
+.answers{
+    position: relative;
+    height: 45vh;
+    background: rgb(164, 155, 155);
+}
+
+.answer1{
+    height: 18%;
+    width: 150px;
+    left: 23%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.answer2{
+    height: 18%;
+    width: 150px;
+    right: 51%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.answer3{
+    height: 18%;
+    width: 150px;
+    left: 51%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.answer4{
+    height: 18%;
+    width: 150px;
+    right: 23%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
