@@ -42,11 +42,10 @@ body{
     outline: none;
     background-color: transparent;
     letter-spacing: 0.5vw;
-    color: #29231E;
+    color: #46512F;
 }
 
 .act button:hover{
     background-image: url('../img/menu/button-select.png');
-    color: red;
-
+    color: #29231E;
 }
