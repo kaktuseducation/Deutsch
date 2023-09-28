@@ -17,7 +17,7 @@ body{
     right: 0;
 }
 
-.ground img{
+.ground item{
     position: relative;
     height: 50px;
     width: 50px;
