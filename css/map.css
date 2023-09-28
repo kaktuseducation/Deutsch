@@ -13,8 +13,8 @@ body{
 .act{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     position: absolute;
     background: lightslategray;
     height: 100vh;
@@ -23,42 +23,12 @@ body{
     top:0;
 }
 
-.game{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 7%;
-
-
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-.book{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 7%;
-
-
-}
-
-.menu{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 7%;
-
-}
-
-.settings{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 7%;
-    width: 100px;
-
+.act button{
+    margin: 10px;
 }
