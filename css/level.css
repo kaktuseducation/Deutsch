@@ -17,6 +17,10 @@ body{
     right: 0;
 }
 
+.ground img{
+    position: absolute;
+}
+
 .act{
     display: flex;
     flex-direction: column;
