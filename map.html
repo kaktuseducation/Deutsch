@@ -10,20 +10,23 @@
         <div class = "map"></div>
         <div class = "act">
             <div class = "center">
-                <button class = "game" onclick = "game()">Начать</button>
-                <button class = "menu" onclick = "menu()">Меню</button>
-                <button class = "book" onclick = "book()">Книга</button>
-                <button class = "settings" onclick = "settings()">Настройки</button>
+                <button class = "btn" onclick = "game()">Начать</button>
+                <button class = "btn" onclick = "menu()">Меню</button>
+                <button class = "btn" onclick = "book()">Книга</button>
+                <button class = "btn" onclick = "settings()">Настройки</button>
             </div>
         </div>
-
+        
+        <script src="js/size.js"></script>
         <script>
             localStorage.setItem('ref', 'map.html');
             function game(){document.location='plot.html'}
             function menu(){document.location='index.html'}
             function book(){document.location='land.html'}
             function settings(){document.location='settings.html'}
-        </script>
-        
+
+
+            set_fontsize();    
+        </script> 
     </body>
 </html>
