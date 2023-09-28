@@ -43,3 +43,9 @@ body{
     background-color: transparent;
     letter-spacing: 0.5vw;
 }
+
+.act button:hover{
+    background-image: url('../img/menu/button-select.png');
+    color: red;
+
+}
