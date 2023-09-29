@@ -55,6 +55,6 @@ path {
     transition: fill 0.2s;
 }
 
-path.highlight-on-hover:hover {
+path :hover {
     fill: yellow;
 }
