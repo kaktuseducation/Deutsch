@@ -49,3 +49,12 @@ body{
     background-image: url('../img/menu/button-select.png');
     color: #29231E;
 }
+
+path {
+    fill: #ccc;
+    transition: fill 0.2s;
+}
+
+path.highlight-on-hover:hover {
+    fill: yellow;
+}
