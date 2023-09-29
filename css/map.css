@@ -60,6 +60,6 @@ path {
     transition: fill 0.2s;
 }
 
-path :hover {
+path:hover {
     fill: yellow;
 }
