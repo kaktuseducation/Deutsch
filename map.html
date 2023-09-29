@@ -916,7 +916,62 @@
                 const pathId = region.getAttribute('class');
                 alert(pathId);
             });
-            }); 
+            });
+
+            const Bremen = document.querySelectorAll('.Bremen');
+            const Niedersachsen = document.querySelectorAll('.Niedersachsen');
+            const Schleswig_Holstein = document.querySelectorAll('.Schleswig-Holstein');
+            const Mecklenburg_Vorpommern = document.querySelectorAll('.Mecklenburg-Vorpommern');
+            
+            function highlightPaths(paths) {
+                paths.forEach(path => {
+                    path.style.fill = 'yellow';
+                });
+            }
+            
+            function resetPaths(paths) {
+                paths.forEach(path => {
+                    path.style.fill = 'red'; // Возвращаем исходный цвет всех элементов
+                });
+            }
+            
+            Bremen.forEach(path => {
+                path.addEventListener('mouseenter', () => {
+                    highlightPaths(class1Paths);
+                });
+                path.addEventListener('mouseleave', () => {
+                    resetPaths(class1Paths);
+                });
+            });
+
+            Niedersachsen.forEach(path => {
+                path.addEventListener('mouseenter', () => {
+                    highlightPaths(class1Paths);
+                });
+                path.addEventListener('mouseleave', () => {
+                    resetPaths(class1Paths);
+                });
+            });
+
+             Schleswig_Holstein.forEach(path => {
+                path.addEventListener('mouseenter', () => {
+                    highlightPaths(class1Paths);
+                });
+                path.addEventListener('mouseleave', () => {
+                    resetPaths(class1Paths);
+                });
+            });
+
+             Mecklenburg_Vorpommern.forEach(path => {
+                path.addEventListener('mouseenter', () => {
+                    highlightPaths(class1Paths);
+                });
+                path.addEventListener('mouseleave', () => {
+                    resetPaths(class1Paths);
+                });
+            });
+            
+
         </script>
         
     </body>
