@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
-        <link rel="stylesheet" type="text/css" href="css/font.css">
-        <link rel="stylesheet" href="css/land.css">
+        <link rel="stylesheet" type="text/css" href="../css/font.css">
+        <link rel="stylesheet" type="css" href="../css/land.css">
     <body>
         <div class = "about">
-            <p>Название</p>
+            <p class = "name">Название</p>
             <div class = "symbol">
                 <img class = "flag" alt = "Флаг">
                 <img class = "emblem" alt = "Герб">
@@ -26,6 +26,30 @@
             function map(){document.location='map.html'}
             function menu(){document.location='index.html'}
             function settings(){document.location='settings.html'}
+
+            land = localStorage.getItem('land');
+            DATA = {
+                "Baden-Württemberg":        [],
+                "Bayern":                   [],
+                "Berlin":                   [],
+                "Brandenburg":              [],
+                "Bremen":                   [],
+                "Hamburg":                  [],
+                "Hessen":                   [],
+                "Mecklenburg-Vorpommern":   [],
+                "Niedersachsen":            [],
+                "Nordrhein-Westfalen":      [],
+                "Rheinland-Pfalz":          [],
+                "Saarland":                 [],
+                "Sachsen":                  [],
+                "Sachsen-Anhalt":	        [],
+                "Schleswig-Holstein":       [],
+                "Freistaat":                []
+            }
+
+            document.querySelector('.name').textContent = land;
+            document.querySelector('.flag').src = "img/flags/" + land + ".svg";
+            document.querySelector('.emblem').src = "img/emblems/" + land + ".svg";
         </script>
     </body>
 </html>
