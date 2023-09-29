@@ -914,9 +914,10 @@
             regions.forEach(region => {
             region.addEventListener('click', () => {
                 const pathId = region.getAttribute('class');
-                alert(pathId);
+                localStorage.setItem('land', pathId);
+                document.location='land.html';
             });
-            });
+            }); 
 
             const Bremen = document.querySelectorAll('.Bremen');
             const Niedersachsen = document.querySelectorAll('.Niedersachsen');
