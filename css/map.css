@@ -63,3 +63,7 @@ path {
 path:hover {
     fill: yellow;
 }
+
+path.Bremen:hover ~ path.Bremen {
+    fill: yellow;
+}
