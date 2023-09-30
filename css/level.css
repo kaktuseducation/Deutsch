@@ -10,13 +10,14 @@ body{
 }
 
 .act{
+    position: relative;
+    height: 27vh;
+    width: 21%;
+    background: lightblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 27vh;
-    width: 21%;
-    background: lightblue;
 }
 
 .item{
@@ -38,10 +39,27 @@ body{
 .center{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .act button{
-    margin: 10px;
-    width: 100%
+    font-family: "gotic"; 
+    margin-top: 2vw;
+    width: 20vw;
+    height: 4vw;
+    background-image: url('../img/menu/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 0.5vw;
+    color: #46512F;
+}
+
+.act button:hover{
+    background-image: url('../img/menu/button-select.png');
+    color: #29231E;
 }
