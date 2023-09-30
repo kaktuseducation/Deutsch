@@ -1247,7 +1247,7 @@
             localStorage.setItem('ref', 'map.html');
             function game(){document.location='plot.html'}
             function menu(){document.location='index.html'}
-            function book(){document.location='land.html'}
+            function book(){document.location='plot.html'}
             function settings(){document.location='settings.html'}
 
             const map = document.getElementById('interactive-map');
@@ -1322,6 +1322,9 @@
                 brd.setAttribute('stroke', 'black'); // Устанавливаем цвет контура (в данном случае, красный)
                 brd.setAttribute('stroke-width', '20');
             });
+
+            var shadowPath = document.getElementById("shadow");
+            shadowPath.addEventListener("click", book);
         </script>
         
     </body>
