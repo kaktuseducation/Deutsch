@@ -7,59 +7,77 @@ body{
     height: 15vh;
     background: grey;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
-.settings{
-    position: absolute;
+.act button{
+    font-family: "gotic"; 
+    margin: 20px;
+    width: 20vw;
+    height: 4vw;
+    background-image: url('../img/menu/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 0.5vw;
+    color: #46512F;
 }
 
-.menu{
-    position: absolute;
+.act button:hover{
+    background-image: url('../img/menu/button-select.png');
+    color: #29231E;
 }
 
 .content{
-    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
     background: lightgray;
 }
 
+.task{
+    margin: auto;
+}
+
 .answers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    height: 45vh;
+    height: 25vh;
     background: rgb(164, 155, 155);
 }
 
-.answer1{
-    height: 18%;
-    width: 150px;
-    left: 23%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.answer2{
-    height: 18%;
-    width: 150px;
-    right: 51%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.answers button{
+    font-family: "gotic"; 
+    margin: 2vw;
+    width: 20vw;
+    height: 4vw;
+    background-image: url('../img/menu/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 0.5vw;
+    color: #46512F;
 }
 
-.answer3{
-    height: 18%;
-    width: 150px;
-    left: 51%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.answer4{
-    height: 18%;
-    width: 150px;
-    right: 23%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.answers button:hover{
+    background-image: url('../img/menu/button-select.png');
+    color: #29231E;
 }
