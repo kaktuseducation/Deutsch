@@ -63,7 +63,7 @@ body{
 }
 
 path {
-    fill: red;
+    fill: rgba(139, 69, 19, 0.5);;
     transition: fill 0.2s;
 }
 
