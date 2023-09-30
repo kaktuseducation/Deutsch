@@ -10,7 +10,6 @@ body{
 .map{
     height: 100vh;
     width: 70%;
-    background: lightgray;
     position: relative;
 }
 
@@ -20,7 +19,6 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    background: lightslategray;
     height: 100vh;
     width: 30%;
     left: 70%;
