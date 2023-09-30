@@ -9,11 +9,14 @@
     <body>
         <div class = "content"></div>
         <div class = "act">
-            <button class = "settings" onclick = "settings()">Настройки</button>
-            <button class = "menu" onclick = "menu()">Меню</button>
-            <button class = "next" onclick = "next()">Далее</button>
+            <div class = "button-contasiner">
+                <button class = "btn" onclick = "settings()">Настройки</button>
+                <button class = "btn" onclick = "menu()">Меню</button>
+                <button class = "btn" onclick = "next()">Далее</button>
+            </div>
         </div>
 
+        <script src="js/size.js"></script>
         <script>
             let c = 0;
             localStorage.setItem('ref', 'plot.html');
@@ -28,7 +31,9 @@
 
             }
             
+            set_fontsize();
         </script>
         
     </body>
 </html>
+
