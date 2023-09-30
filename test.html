@@ -8,24 +8,29 @@
         <link rel="stylesheet" href="css/test.css">
     <body>
         <div class = "act">
-            <button class = "settings" onclick = "settings()">Настройки</button>
-            <button class = "menu" onclick = "menu()">Меню</button>
+            <button class = "btn" onclick = "settings()">Настройки</button>
+            <button class = "btn" onclick = "menu()">Меню</button>
         </div>
         <div class = "content">
             <img class = "task" alt = "Картинка">
         </div>
-        <div class = "answers">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+        <div class="answers">
+            <div class = "button-contasiner">
+                <button class = "btn">Ответ 1</button>
+                <button class = "btn">Ответ 2</button>
+                <button class = "btn">Ответ 3</button>
+                <button class = "btn">Ответ 4</button>
+            </div>
         </div>
 
+        <script src="js/size.js"></script>
         <script>
             localStorage.setItem('ref', 'test.html');
             
             function menu(){document.location='index.html'}
             function settings(){document.location='settings.html'}
+
+            set_fontsize();
         </script>
     </body>
 </html>
