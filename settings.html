@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
-        <link rel="stylesheet" type="text/css" href="../css/font.css">
+        <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" href="css/settings.css">
     <body>
         <div class = "img_container"></div>
@@ -12,6 +12,7 @@
             <div class = "sound">
                 <label class = "label_sound">Звук</label>
                 <input 
+                    class = "volume"
                     type="range"
                     min="0" 
                     max="100" 
@@ -20,7 +21,19 @@
             </div>
             <div class = "difficulty">
                 <label class = "label_difficulty">Сложность</label>
-                <div class = "hard"></div>
+                <div class = "hard">
+
+                    <div class="form_radio">
+
+                        <label for="easy">Лёгкий</label>
+                        <input type="radio" id="easy" name="difficulty" value="easy">
+
+                        <label for="hard">Сложный</label>
+                        <input type="radio" id="hard" name="difficulty" value="hard">
+
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class = "act">
@@ -38,3 +51,4 @@
         </script>
     </body>
 </html>
+
