@@ -9,23 +9,30 @@
     <body>
         <div class = "about">
             <p class = "name">Название</p>
-            <div class = "symbol">
-                <img class = "flag" alt = "Флаг">
-                <img class = "emblem" alt = "Герб">
-                <img class = "artefact" alt = "Артефакт">
+        </div>
+        <div class = "symbol">
+            <img class = "flag" alt = "Флаг">
+            <img class = "emblem" alt = "Герб">
+            <img class = "artefact" alt = "Артефакт">
+        </div>
+
+        <div class = "act">
+            <div class = "button-contasiner">
+                <button class = "map" onclick = "map()">Карта</button>
+                <button class = "settings" onclick = "settings()">Настройки</button>
+                <button class = "menu" onclick = "menu()">Меню</button>
             </div>
         </div>
-        <div class = "act">
-            <button class = "map" onclick = "map()">Карта</button>
-            <button class = "settings" onclick = "settings()">Настройки</button>
-            <button class = "menu" onclick = "menu()">Меню</button>
-        </div>
         <div class = "content"></div>
+        
+        <script src="js/size.js"></script>
         <script>
             localStorage.setItem('ref', 'land.html');
             function map(){document.location='map.html'}
             function menu(){document.location='index.html'}
             function settings(){document.location='settings.html'}
+
+            set_fontsize();
 
             land = localStorage.getItem('land');
             DATA = {
