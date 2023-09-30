@@ -40,6 +40,7 @@ body{
     transform: translateY(-50%);
     margin-left: 5%;
     text-align: center;
+    color: #46512F;
 }
 
 .volume{
@@ -71,6 +72,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
     margin-left: 5%;
+    color: #46512F;
 }
 
 .hard{
@@ -117,3 +119,6 @@ body{
     background-image: url('../img/menu/button-select.png');
     color: #29231E;
 }
+
+
+
