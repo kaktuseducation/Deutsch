@@ -65,8 +65,10 @@ body{
 path {
     fill: rgba(139, 69, 19, 0.8);;
     transition: fill 0.2s;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 path:hover {
     fill: yellow;
+    
 }
