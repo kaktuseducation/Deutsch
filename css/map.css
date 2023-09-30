@@ -55,8 +55,9 @@ body{
 }
 
 #interactive-map{
-    width: 80%;
     height: 80%;
+    max-width: 80%;
+    
 }
 
 path {
