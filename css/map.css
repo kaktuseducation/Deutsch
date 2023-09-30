@@ -9,9 +9,10 @@ body{
 }
 
 .map{
-    height: 100vh;
+    height: 80vh;
     width: 60%;
     left: 10%;
+    top: 10%;
     position: relative;
 }
 
