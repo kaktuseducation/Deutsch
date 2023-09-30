@@ -7,21 +7,24 @@
         <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" href="css/index.css">
     <body>
-        <div class="img_container"></div>
+        <div class="img_container">
+            <img id="pendulum-text" src="img/menu/label.png" alt="Your Text">
+        </div>
         <div class="menu">
             <div class = "center">
                 <button class="game" onclick= "game()">Играть</button>
                 <button class="settings" onclick= "settings()">Настройки</button>
             </div>
         </div>
-
+        
         
     </body>
-    
+    <script src="js/size.js"></script>
     <script>
         localStorage.setItem('ref', 'index.html');
 
         function settings(){document.location='settings.html'}
         function game(){document.location='map.html'}
+
     </script>
 </html>
