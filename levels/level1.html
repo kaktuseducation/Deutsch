@@ -12,8 +12,8 @@
         <div class = "words" id="list"></div>
         <div class = "act">
             <div class = "center">
-                <button class = "settings" onclick = "settings()">Настройки</button>
-                <button class = "menu" onclick = "menu()">Меню</button>
+                <button class = "btn" onclick = "settings()">Настройки</button>
+                <button class = "btn" onclick = "menu()">Меню</button>
             </div>
         </div>
 
@@ -25,9 +25,12 @@
         </div>
         
         <script src="../js/found.js"></script>
+        <script src="js/size.js"></script>
         <script>
             function menu(){document.location='../menu.html'}
             function settings(){document.location='../settings.html'}
+            set_fontsize();
         </script>
     </body>
 </html>
+
