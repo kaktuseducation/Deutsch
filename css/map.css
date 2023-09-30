@@ -12,6 +12,7 @@ body{
     height: 100vh;
     width: 70%;
     position: relative;
+    paddind: 10% 0% 10% 20%;
 }
 
 .act{
@@ -56,7 +57,6 @@ body{
 #interactive-map{
     width: 80%;
     height: 80%;
-    margin: 10% 10% 10% 20%;
 }
 
 path {
