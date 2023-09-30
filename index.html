@@ -12,18 +12,22 @@
         </div>
         <div class="menu">
             <div class = "center">
-                <button class="game" onclick= "game()">Играть</button>
-                <button class="settings" onclick= "settings()">Настройки</button>
+                <button class="btn" onclick= "game()">Играть</button>
+                <button class="btn" onclick= "settings()">Настройки</button>
             </div>
         </div>
         
         
     </body>
+    
+    <script src="js/size.js"></script>
     <script>
         localStorage.setItem('ref', 'index.html');
 
         function settings(){document.location='settings.html'}
         function game(){document.location='map.html'}
+
+        set_fontsize();
 
     </script>
 </html>
