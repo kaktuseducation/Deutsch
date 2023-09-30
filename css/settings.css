@@ -27,6 +27,11 @@ body{
 }
 
 .label_sound{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "gotic";
     height: 10vh;
     width: 30%;
     background: gray;
@@ -34,6 +39,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
     margin-left: 5%;
+    text-align: center;
 }
 
 .volume{
@@ -53,6 +59,11 @@ body{
 }
 
 .label_difficulty{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "gotic";
     height: 10vh;
     width: 30%;
     background: gray;
@@ -82,12 +93,27 @@ body{
     right: 0;
 }
 
-.back{
-    height: 5vh;
-    width: 100px;
+.act button{
+    font-family: "gotic"; 
+    width: 20vw;
+    height: 4vw;
+    background-image: url('../img/menu/button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 0.5vw;
+    color: #46512F;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     right: 0;
     margin-right: 5%;
-    transform: translateY(-50%);
+}
+
+.act button:hover{
+    background-image: url('../img/menu/button-select.png');
+    color: #29231E;
 }
