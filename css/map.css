@@ -10,7 +10,8 @@ body{
 
 .map{
     height: 100vh;
-    width: 70%;
+    width: 60%;
+    left: 10%;
     position: relative;
 }
 
