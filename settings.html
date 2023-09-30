@@ -10,7 +10,7 @@
         <div class = "img_container"></div>
         <div class = "settings">
             <div class = "sound">
-                <label>Звук</label>
+                <label class = "label_sound">Звук</label>
                 <input 
                     type="range"
                     min="0" 
@@ -19,20 +19,22 @@
                     value="50">
             </div>
             <div class = "difficulty">
-                <label>Сложность</label>
+                <label class = "label_difficulty">Сложность</label>
                 <div class = "hard"></div>
             </div>
         </div>
         <div class = "act">
-            <button class="back" onclick= "settings()"">Назад</button>
+            <button class="btn" onclick= "settings()"">Назад</button>
         </div>
+        <script src="js/size.js"></script>
         <script>
             const ref = localStorage.getItem('ref');
             
             function settings()
             {
                 document.location = ref;
-            }  
+            }
+            set_fontsize();
         </script>
     </body>
 </html>
