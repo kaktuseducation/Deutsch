@@ -32,3 +32,20 @@ body{
     margin: 10px;
     width: 100%
 }
+
+#pendulum-text {
+    width: 50%;
+    animation: swing 15s infinite ease-in-out alternate;
+}
+
+@keyframes swing {
+    0% {
+        transform: translateY(-40%) translateX(-11%) rotate(3deg);
+    }
+    50% {
+        transform: translateY(-40%) translateX(-5%) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(-40%) translateX(-11%) rotate(3deg);
+    }
+}
