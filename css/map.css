@@ -68,7 +68,7 @@ body{
 }
 
 .map path {
-    fill: url(../img/flags/Berlin.svg);
+    fill: url('../img/flags/Berlin.svg');
     transition: fill 0.2s;
 }
 
