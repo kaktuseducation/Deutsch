@@ -34,7 +34,6 @@
 
         const loader = document.querySelector('.loader');
         value = localStorage.getItem('load');
-        console.log(value);
         
         if (value === null || value === ''){
             loader.style.display = 'block';
@@ -44,6 +43,7 @@
         window.addEventListener('load', () => {
             loader.style.display = 'none';
             localStorage.setItem('load', true);
+            alert(00000);
             });
 
     </script>
