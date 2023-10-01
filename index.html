@@ -33,10 +33,16 @@
 
         set_fontsize();
 
+        const image = new Image();
+        image.src = 'img/menu/button_select.png';
+        image.onload = loading();
+
         const loader = document.querySelector('.loader');
-        window.addEventListener('load', () => {
-            loader.style.display = 'none';
-        });
+        function loading(){
+            window.addEventListener('load', () => {
+                loader.style.display = 'none';
+            });
+        }
 
     </script>
 </html>
