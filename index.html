@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="preload" as="image" href="img/menu/book_p.png">
         <link rel="preload" as="image" href="img/menu/back_map.png">
-        <link rel="preload" as="image" href="img/menu/button_select.png">
+        <link rel="preload" as="image" href="img/menu/button-select.png">
     <body>
         <iframe class="loader" src="preloader.html" width="100vw" height="1100vh" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999;"></iframe>
         <div class="img_container">
@@ -32,17 +32,11 @@
         function game(){document.location='map.html'}
 
         set_fontsize();
-
-        const image = new Image();
-        image.src = 'img/menu/button_select.png';
-        image.onload = loading();
-
+        
         const loader = document.querySelector('.loader');
-        function loading(){
-            window.addEventListener('load', () => {
-                loader.style.display = 'none';
-            });
-        }
+        window.addEventListener('load', () => {
+            loader.style.display = 'none';
+        });
 
     </script>
 </html>
