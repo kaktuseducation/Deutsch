@@ -31,7 +31,7 @@ body{
 .menu button{
     font-family: "gotic"; 
     margin: 20px;
-    width: 20vw;
+    width: 22vw;
     height: 4vw;
     background-image: url('../img/menu/button.png');
     background-size: cover;
