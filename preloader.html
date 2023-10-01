@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Flag Loader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            z-index: 100;
+        }
+        .loader-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #29231E;
+            overflow: hidden;
+        }
+
+        .loader-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .loader {
+            width: 5vw;
+            height: 5vw; /* Высота круга */
+            border: 0.5vw solid #d00;
+            border-top: 0.5vw solid #ffcc29; /* Золотой цвет */
+            border-bottom: 0.5vw solid #000; /* Черный цвет */
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+
+        .text-left,
+        .text-right {
+            font-size: 5vw;
+            line-height: 5vw; /* Выравнивание текста по центру по вертикали */
+            white-space: nowrap;
+            color: #ffcc29;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader-container">
+            <div class="text-left">Einen M</div>
+            <div class="loader"></div>
+            <div class="text-right">ment, wir laden Daten</div>
+        </div>
+    </div>
+</body>
+</html>
