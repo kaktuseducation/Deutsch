@@ -33,10 +33,10 @@
         set_fontsize();
 
         const loader = document.querySelector('.loader');
-
-        console.log(localStorage.getItem('load'));
+        value = localStorage.getItem('load');
+        console.log(value);
         
-        if (! (localStorage.getItem('load'))){
+        if (value === null || value === ''){
             loader.style.display = 'block';
             consol.log(0);
         }
