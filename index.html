@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" href="css/index.css">
     <body>
+        <iframe class="loader" src="preloader.html" width="100vw" height="1100vh" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999;"></iframe>
         <div class="img_container">
             <img id="pendulum-text" src="img/menu/label.png" alt="Your Text">
         </div>
@@ -28,6 +29,17 @@
         function game(){document.location='map.html'}
 
         set_fontsize();
+
+        const loader = document.querySelector('.loader');
+        
+        if (! (localStorage.getItem('load'))){
+            loader.style.display = 'block;'
+        }
+
+        window.addEventListener('load', () => {
+            loader.style.display = 'none';
+            localStorage.setItem('load', true);
+            });
 
     </script>
 </html>
