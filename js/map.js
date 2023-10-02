@@ -11,7 +11,19 @@ const SPECIAL = ['Bremen', 'Niedersachsen', 'Schleswig-Holstein', 'Mecklenburg-V
 const map = document.getElementById('interactive-map');
 const regions = map.querySelectorAll('path');
 
+LAND_LEVEL = {
+    0: [];
+    1: ['Bayern']
+}
+
 regions.forEach(region => {
+    if (LAND_LEVEL[1].includes(region.getAttribute('class')){
+         path.classList.add("done");
+    }
+    else{
+        path.classList.add("usual");
+    }
+        
     region.addEventListener('click', () => {
         const pathId = region.getAttribute('class');
         localStorage.setItem('land', pathId);
