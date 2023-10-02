@@ -86,7 +86,16 @@ body{
 .current{
     stroke: yellow;
     stroke-width: 10;
-    fill: rgba(0, 0, 0, 0.0);
+    animation: blink 2s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        fill: rgba(0, 0, 0, 0.0);
+    }
+    100% {
+        fill: yellow;
+    }
 }
 
 #book{
