@@ -68,13 +68,18 @@ body{
 }
 
 .map path {
-    fill: rgba(139, 69, 19, 0.0);
+    fill: rgba(139, 69, 19, 0.5);
     transition: fill 0.2s;
 }
 
 .map path:hover {
-    fill: yellow;
-    
+    stroke: yellow;
+    stroke-width: 20;
+}
+
+.done {
+    fill: rgba(139, 69, 19, 0.5);
+    transition: fill 0.2s;
 }
 
 #book {
