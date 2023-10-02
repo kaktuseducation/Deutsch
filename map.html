@@ -1274,9 +1274,7 @@
             
             function resetPaths(paths) {
                 paths.forEach(path => {
-                    path.style.strokeWidth = 0;
-                    path.style.fill = 'rgba(0, 0, 0, 0.0)';
-                    path.transition = 'fill 0.2s';
+                    path.classList.remove("hovered");
                 });
             }
             
