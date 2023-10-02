@@ -39,8 +39,8 @@ regions.forEach(region => {
     }
         
     region.addEventListener('click', () => {
-        const pathId = region.getAttribute('class');
-        localStorage.setItem('land', pathId);
+        const pathId = region.getAttribute('class').split(' ');
+        localStorage.setItem('land', pathId[0]);
         document.location='land.html';
     });
 }); 
