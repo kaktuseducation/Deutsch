@@ -79,8 +79,14 @@ body{
 }
 
 .done {
-    fill: rgba(139, 69, 19, 0.5);
+    fill: rgba(139, 69, 19, 0.5) !important;
     transition: fill 0.2s;
+}
+
+.current {
+    stroke: yellow;
+    stroke-width: 10;
+    fill: rgba(0, 0, 0, 0.0);
 }
 
 #book {
