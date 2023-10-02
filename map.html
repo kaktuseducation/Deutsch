@@ -1277,6 +1277,15 @@
                     path.classList.remove("hovered");
                 });
             }
+
+            regions.forEach(path => {
+                path.addEventListener('mouseenter', () => {
+                    path.classList.add("hovered");
+                });
+                path.addEventListener('mouseleave', () => {
+                    path.classList.remove("hovered");
+                });
+            });
             
             Bremen.forEach(path => {
                 path.addEventListener('mouseenter', () => {
