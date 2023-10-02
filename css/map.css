@@ -75,7 +75,7 @@ body{
 .hovered {
     stroke: yellow;
     stroke-width: 10;
-    fill: rgba(255, 255, 0, 0.5)
+    fill: rgba(255, 255, 0, 0.5) !important;
 }
 
 .done {
