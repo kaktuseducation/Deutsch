@@ -75,6 +75,7 @@ body{
 .map path:hover {
     stroke: yellow;
     stroke-width: 20;
+    fill: rgba(255, 255, 0, 0.5)
 }
 
 .done {
