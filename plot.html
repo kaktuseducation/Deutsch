@@ -39,13 +39,14 @@
             function settings(){document.location='settings.html'}
             function next()
             {
+                console.log(PLOT[level][COUNTER].text);
                 COUNTER += 1;
                 if (COUNTER == ALL){
-                    console.log(PLOT[level][COUNTER].text);
                     document.location='levels/level' + level + '.html';
                 }
 
             }
+            next();
             
             set_fontsize();
         </script>
