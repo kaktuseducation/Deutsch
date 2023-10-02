@@ -26,6 +26,7 @@
         <div class = "content"></div>
         
         <script src="js/size.js"></script>
+        <script src="data/lands.js"></script>
         <script>
             localStorage.setItem('ref', 'land.html');
             function map(){document.location='map.html'}
@@ -35,25 +36,7 @@
             set_fontsize();
 
             land = localStorage.getItem('land');
-            DATA = {
-                "Baden-Württemberg":        [],
-                "Bayern":                   [],
-                "Berlin":                   [],
-                "Brandenburg":              [],
-                "Bremen":                   [],
-                "Hamburg":                  [],
-                "Hessen":                   [],
-                "Mecklenburg-Vorpommern":   [],
-                "Niedersachsen":            [],
-                "Nordrhein-Westfalen":      [],
-                "Rheinland-Pfalz":          [],
-                "Saarland":                 [],
-                "Sachsen":                  [],
-                "Sachsen-Anhalt":	        [],
-                "Schleswig-Holstein":       [],
-                "Freistaat":                []
-            }
-
+            document.querySelector('.content').textContent = LANDS[land];
             document.querySelector('.name').textContent = land;
             document.querySelector('.flag').src = "img/flags/" + land + ".svg";
             document.querySelector('.emblem').src = "img/emblems/" + land + ".svg";
