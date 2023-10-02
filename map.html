@@ -1270,13 +1270,14 @@
                 paths.forEach(path => {
                     path.style.stroke = 'yellow';
                     path.style.strokeWidth = 10;
-                    path.style.fill = 'rgba(139, 69, 19, 0.5)';
+                    path.style.fill = 'rgba(255, 255, 0, 0.5)';
                     path.transition = 'fill 0.2s';
                 });
             }
             
             function resetPaths(paths) {
                 paths.forEach(path => {
+                    path.style.strokeWidth = 0;
                     path.style.fill = 'rgba(0, 0, 0, 0.0)';
                     path.transition = 'fill 0.2s';
                 });
