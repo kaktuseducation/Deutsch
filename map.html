@@ -1270,10 +1270,11 @@
                 land = document.querySelectorAll('.'+ name_id);
                 land.forEach(path => {
                     path.addEventListener('mouseenter', () => {
-                    highlightPaths(land);
-                });
-                path.addEventListener('mouseleave', () => {
-                    resetPaths(land);
+                        highlightPaths(land);
+                    });
+                    path.addEventListener('mouseleave', () => {
+                        resetPaths(land);
+                    });
                 });
             });
 
