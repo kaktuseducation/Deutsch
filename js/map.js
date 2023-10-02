@@ -11,16 +11,7 @@ const SPECIAL = ['Bremen', 'Niedersachsen', 'Schleswig-Holstein', 'Mecklenburg-V
 const map = document.getElementById('interactive-map');
 const regions = map.querySelectorAll('path');
 
-LAND_LEVEL = {
-  0: {
-    current: 'Bayern',
-    done: []
-  },
-  1: {
-    current: 'Berlin',
-    done: ['Bayern']
-  }
-}
+
 
 level = 1
 let dones = LAND_LEVEL[level].done;
