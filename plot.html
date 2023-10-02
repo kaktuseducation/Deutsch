@@ -33,18 +33,22 @@
             
             function menu(){document.location='index.html'}
             function settings(){document.location='settings.html'}
-            function next()
-            {
+            function show(){
                 TEXT.textContent = PLOT[level][COUNTER].text
                 //IMAGE.src = PLOT[level][COUNTER].img
+            }
+            function next()
+            {
                 COUNTER += 1;
                 if (COUNTER == ALL){
+                    COUNTER = 0;
                     document.location='levels/level' + level + '.html';
                 }
-
+                else{
+                    show();
+                }
             }
-            next();
-            
+            show();
             set_fontsize();
         </script>
         
