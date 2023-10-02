@@ -7,7 +7,10 @@
         <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" href="css/plot.css">
     <body>
-        <div class = "content"></div>
+        <div class = "content">
+            <div class = "text"></div>
+            <img src="">
+        </div>
         <div class = "act">
             <div class = "button-contasiner">
                 <button class = "btn" onclick = "settings()">Настройки</button>
@@ -42,6 +45,7 @@
                 console.log(PLOT[level][COUNTER].text);
                 COUNTER += 1;
                 if (COUNTER == ALL){
+                    console.log(0);
                     document.location='levels/level' + level + '.html';
                 }
 
