@@ -26,8 +26,8 @@ let dones = LAND_LEVEL[level].done;
 let current =  LAND_LEVEL[level].current;
 
 regions.forEach(region => {
-    let land = region.getAttribute('class'));
-    if (dones.includes(land){
+    let land = region.getAttribute('class');
+    if (dones.includes(land)){
          region.classList.add("done");
     }
     else if (land == current){
