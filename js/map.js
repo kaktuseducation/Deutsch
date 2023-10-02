@@ -12,13 +12,26 @@ const map = document.getElementById('interactive-map');
 const regions = map.querySelectorAll('path');
 
 LAND_LEVEL = {
-    0: [],
-    1: ['Bayern']
+  0: {
+    current: 'Bayern',
+    done: []
+  },
+  1: {
+    current: 'Berlin',
+    done: ['Bayern']
+  }
 }
 
+let dones = LAND_LEVEL[level].done;
+let current =  LAND_LEVEL[level].current;
+
 regions.forEach(region => {
-    if (LAND_LEVEL[1].includes(region.getAttribute('class'))){
+    let land = region.getAttribute('class'));
+    if (dones.includes(land){
          region.classList.add("done");
+    }
+    else if (land == current){
+        region.classList.add("current");
     }
     else{
         region.classList.add("usual");
