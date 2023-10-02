@@ -1278,8 +1278,13 @@
                 });
             }
 
-            Niedersachsen.classList.add("done");
-            Mecklenburg_Vorpommern.classList.add("current")
+            Niedersachsen.forEach(function(element) {
+                element.classList.add("done");
+            });
+
+            Mecklenburg_Vorpommern.forEach(function(element) {
+                element.classList.add("current");
+            });
 
             regions.forEach(path => {
                 path.addEventListener('mouseenter', () => {
