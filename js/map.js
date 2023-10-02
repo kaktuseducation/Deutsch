@@ -12,7 +12,7 @@ const map = document.getElementById('interactive-map');
 const regions = map.querySelectorAll('path');
 
 LAND_LEVEL = {
-    0: [];
+    0: [],
     1: ['Bayern']
 }
 
