@@ -9,7 +9,7 @@
     <body>
         <div class = "content">
             <div class = "text"></div>
-            <img src="">
+            <img class = "image" src="">
         </div>
         <div class = "act">
             <div class = "button-contasiner">
@@ -23,6 +23,9 @@
         <script src="data/plot.js"></script>
         <script>
             localStorage.setItem('ref', 'plot.html');
+
+            TEXT = document.querySelector('.text');
+            IMAGE = document.querySelector('.image');
             
             let level = 1;
             let COUNTER = 0;
@@ -32,10 +35,10 @@
             function settings(){document.location='settings.html'}
             function next()
             {
-                console.log(PLOT[level][COUNTER].text);
+                TEXT.textContent = PLOT[level][COUNTER].text
+                //IMAGE.src = PLOT[level][COUNTER].img
                 COUNTER += 1;
                 if (COUNTER == ALL){
-                    console.log(0);
                     document.location='levels/level' + level + '.html';
                 }
 
