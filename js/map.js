@@ -2,7 +2,7 @@ localStorage.setItem('ref', 'map.html');
 
 function game(){document.location='plot.html'}
 function menu(){document.location='index.html'}
-function book(){document.location='plot.html'}
+function book(){document.location='book.html'}
 function settings(){document.location='settings.html'}
 
 
