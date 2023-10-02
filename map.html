@@ -1267,6 +1267,7 @@
 
             SPECIAL.forEach(name_id => {
                 land = document.querySelectorAll('.'+ name_id);
+                console.log(name_id, land)
                 land.forEach(path => {
                     path.addEventListener('mouseenter', () => {
                         highlightPaths(land);
