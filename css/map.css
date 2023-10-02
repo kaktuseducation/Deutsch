@@ -49,6 +49,26 @@ body{
     background-image: url('../img/menu/begin-select.png');
 }
 
+#back{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    bottom: 0;
+    transform: translate(-2%, +4%);
+    background-image: url('../img/menu/back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+
+#back:hover{
+    background-image: url('../img/menu/back-select.png');
+}
+
 #interactive-map{
     position: absolute;
     height: 100%;
