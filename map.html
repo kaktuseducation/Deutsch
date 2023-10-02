@@ -1274,6 +1274,8 @@
             
             function resetPaths(paths) {
                 paths.forEach(path => {
+                    path.style.stroke = 'yellow';
+                    path.style.strokeWidth = 20;
                     path.style.fill = 'rgba(139, 69, 19, 0.5)';
                     path.transition = 'fill 0.2s';
                 });
