@@ -41,7 +41,6 @@ regions.forEach(path => {
 });
 SPECIAL.forEach(name_id => {
     let land = document.querySelectorAll('.'+ name_id);
-    console.log(name_id, land)
     land.forEach(path => {
         path.addEventListener('mouseenter', () => {
             highlightPaths(land);
