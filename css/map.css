@@ -32,8 +32,8 @@ body{
 
 #start{
     position: relative;
-    width: 80%;
-    height: auto;
+    width: 25vw;
+    height: 20vw;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
