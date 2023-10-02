@@ -30,25 +30,23 @@ body{
     align-items: center;
 }
 
-.act button{
-    font-family: "gotic"; 
-    margin: 20px;
-    width: 20vw;
-    height: 4vw;
-    background-image: url('../img/menu/button.png');
+#start{
+    width: 80%;
+    height: auto;
+    button: 10%;
+    left: 50%;
+    trasform: translate(-50%, -50%);
+    background-image: url('../img/menu/begin.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     outline: none;
     background-color: transparent;
-    letter-spacing: 0.5vw;
-    color: #46512F;
 }
 
-.act button:hover{
-    background-image: url('../img/menu/button-select.png');
-    color: #29231E;
+#start:hover{
+    background-image: url('../img/menu/begin-select.png');
 }
 
 #interactive-map{
