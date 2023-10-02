@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 85vh;
+    width: 100%;
+    background: gray;
+    position: relative;
+
+}
+
+.move{
+    height: 15vh;
+    width: 100%;
+    background: lightblue; 
+    position: relative;
+}
+
+#next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+}
+
+#back{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+.act{
+    height: 30vh;
+    width: 7vw;
+    background: lightgreen;
+    position: absolute;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.act button{
+    width: 80%; 
+    margin: 3vh;
+}
