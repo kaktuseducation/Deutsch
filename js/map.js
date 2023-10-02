@@ -17,7 +17,7 @@ LAND_LEVEL = {
 }
 
 regions.forEach(region => {
-    if (LAND_LEVEL[1].includes(region.getAttribute('class')){
+    if (LAND_LEVEL[1].includes(region.getAttribute('class'))){
          path.classList.add("done");
     }
     else{
