@@ -68,7 +68,7 @@ body{
 }
 
 .map path {
-    fill: rgba(139, 69, 19, 0.5);
+    fill: rgba(0, 0, 0, 0.0);
     transition: fill 0.2s;
 }
 
