@@ -1250,21 +1250,37 @@
             function book(){document.location='plot.html'}
             function settings(){document.location='settings.html'}
 
+
+            const SPECIAL = ['Bremen', 'Niedersachsen', 'Schleswig_Holstein', 'Mecklenburg_Vorpommern'];
+
             const map = document.getElementById('interactive-map');
             const regions = map.querySelectorAll('path');
 
             regions.forEach(region => {
-            region.addEventListener('click', () => {
-                const pathId = region.getAttribute('class');
-                localStorage.setItem('land', pathId);
-                document.location='land.html';
-            });
+                region.addEventListener('click', () => {
+                    const pathId = region.getAttribute('class');
+                    localStorage.setItem('land', pathId);
+                    document.location='land.html';
+                });
             }); 
 
-            const Bremen = document.querySelectorAll('.Bremen');
-            const Niedersachsen = document.querySelectorAll('.Niedersachsen');
-            const Schleswig_Holstein = document.querySelectorAll('.Schleswig-Holstein');
-            const Mecklenburg_Vorpommern = document.querySelectorAll('.Mecklenburg-Vorpommern');
+
+            SPECIAL
+            SPECIAL.forEach(name_id => {
+                land = document.querySelectorAll('.'+ name_id);
+                land.forEach(path => {
+                    path.addEventListener('mouseenter', () => {
+                    highlightPaths(land);
+                });
+                path.addEventListener('mouseleave', () => {
+                    resetPaths(land);
+                });
+            });
+
+            // const Bremen = document.querySelectorAll('.Bremen');
+            // const Niedersachsen = document.querySelectorAll('.Niedersachsen');
+            // const Schleswig_Holstein = document.querySelectorAll('.Schleswig-Holstein');
+            // const Mecklenburg_Vorpommern = document.querySelectorAll('.Mecklenburg-Vorpommern');
             
             function highlightPaths(paths) {
                 paths.forEach(path => {
@@ -1278,13 +1294,13 @@
                 });
             }
 
-            Niedersachsen.forEach(function(element) {
-                element.classList.add("done");
-            });
+            // Niedersachsen.forEach(function(element) {
+            //     element.classList.add("done");
+            // });
 
-            Mecklenburg_Vorpommern.forEach(function(element) {
-                element.classList.add("current");
-            });
+            // Mecklenburg_Vorpommern.forEach(function(element) {
+            //     element.classList.add("current");
+            // });
 
             regions.forEach(path => {
                 path.addEventListener('mouseenter', () => {
@@ -1295,41 +1311,41 @@
                 });
             });
             
-            Bremen.forEach(path => {
-                path.addEventListener('mouseenter', () => {
-                    highlightPaths(Bremen);
-                });
-                path.addEventListener('mouseleave', () => {
-                    resetPaths(Bremen);
-                });
-            });
+            // Bremen.forEach(path => {
+            //     path.addEventListener('mouseenter', () => {
+            //         highlightPaths(Bremen);
+            //     });
+            //     path.addEventListener('mouseleave', () => {
+            //         resetPaths(Bremen);
+            //     });
+            // });
 
-            Niedersachsen.forEach(path => {
-                path.addEventListener('mouseenter', () => {
-                    highlightPaths(Niedersachsen);
-                });
-                path.addEventListener('mouseleave', () => {
-                    resetPaths(Niedersachsen);
-                });
-            });
+            // Niedersachsen.forEach(path => {
+            //     path.addEventListener('mouseenter', () => {
+            //         highlightPaths(Niedersachsen);
+            //     });
+            //     path.addEventListener('mouseleave', () => {
+            //         resetPaths(Niedersachsen);
+            //     });
+            // });
 
-             Schleswig_Holstein.forEach(path => {
-                path.addEventListener('mouseenter', () => {
-                    highlightPaths(Schleswig_Holstein);
-                });
-                path.addEventListener('mouseleave', () => {
-                    resetPaths(Schleswig_Holstein);
-                });
-            });
+            //  Schleswig_Holstein.forEach(path => {
+            //     path.addEventListener('mouseenter', () => {
+            //         highlightPaths(Schleswig_Holstein);
+            //     });
+            //     path.addEventListener('mouseleave', () => {
+            //         resetPaths(Schleswig_Holstein);
+            //     });
+            // });
 
-             Mecklenburg_Vorpommern.forEach(path => {
-                path.addEventListener('mouseenter', () => {
-                    highlightPaths(Mecklenburg_Vorpommern);
-                });
-                path.addEventListener('mouseleave', () => {
-                    resetPaths(Mecklenburg_Vorpommern);
-                });
-            });
+            //  Mecklenburg_Vorpommern.forEach(path => {
+            //     path.addEventListener('mouseenter', () => {
+            //         highlightPaths(Mecklenburg_Vorpommern);
+            //     });
+            //     path.addEventListener('mouseleave', () => {
+            //         resetPaths(Mecklenburg_Vorpommern);
+            //     });
+            // });
             
             const border = document.getElementById('border');
             const borders = border.querySelectorAll('path');
