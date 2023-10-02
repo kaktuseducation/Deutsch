@@ -22,6 +22,7 @@ LAND_LEVEL = {
   }
 }
 
+level = 1
 let dones = LAND_LEVEL[level].done;
 let current =  LAND_LEVEL[level].current;
 
