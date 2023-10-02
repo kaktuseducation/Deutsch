@@ -78,6 +78,12 @@ body{
     fill: rgba(255, 255, 0, 0.5)
 }
 
+.hovered {
+    stroke: yellow;
+    stroke-width: 10;
+    fill: rgba(255, 255, 0, 0.5)
+}
+
 .done {
     fill: rgba(139, 69, 19, 0.5);
     transition: fill 0.2s;
