@@ -32,19 +32,19 @@ body{
     right: 0;
     top: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.button-container{
+/* .button-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .act button{
     font-family: "gotic"; 
-    margin: 1vw;
+    margin: 2vw;
     width: 20vw;
     height: 4vw;
     background-image: url('../img/menu/button.png');
