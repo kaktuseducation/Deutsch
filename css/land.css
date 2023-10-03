@@ -8,12 +8,12 @@ body{
     padding: 0;
 }
 
-.about{
+/* .about{
     background: lightgrey;
     height: 15vh;
     width: 26%;
     position: relative;
-}
+} */
 
 .about p{
     position: absolute;
@@ -86,11 +86,11 @@ body{
     width: 100px;
 }
 
-.artefact{
+/* .artefact{
     position: relative;
     height: 100px;
     width: 100px;
-}
+} */
 
 .content{
     background: rgb(79, 105, 130);
@@ -99,4 +99,14 @@ body{
     position: absolute;
     right: 0;
     top: 15%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: "gotic";
 }
