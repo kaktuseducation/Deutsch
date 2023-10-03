@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Главная страница</title>
+        <title>Land der Märchen</title>
         <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" href="css/plot.css">
     <body>
@@ -23,6 +23,8 @@
         <script src="data/plot.js"></script>
         <script>
             localStorage.setItem('ref', 'plot.html');
+            function menu(){document.location='index.html'}
+            function settings(){document.location='settings.html'}
 
             TEXT = document.querySelector('.text');
             IMAGE = document.querySelector('.image');
@@ -32,11 +34,29 @@
             let COUNTER = 0;
             let ALL = PLOT[level].length;
             
-            function menu(){document.location='index.html'}
-            function settings(){document.location='settings.html'}
+            function size(){
+                let width = 0.5*0.9*window.innerWidth;
+                let height = 0.85*0.9*window.innerHeight;
+                let size = Math.sqrt(width * height / max_length/2);
+                let space = 0.1*size;
+                TEXT.style.fontSize = size+ 'px';
+                TEXT.style.letterSpacing = space + 'px';
+                TEXT.style.lineHeight = '1.8';
+            }
+            window.addEventListener('resize', size);
+
+            max_length = 0;
+            PLOT[level].forEach(site => {
+                if (site.text.length > max_length)
+                    {
+                        max_length = site.text.length;
+                    }
+            });
+
             function show(){
                 TEXT.className = 'text';
                 IMAGE.className = 'image';
+                size();
                 page = PLOT[level][COUNTER];
                 style = page.position;
                 if (style == 'left'){
