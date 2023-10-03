@@ -34,8 +34,24 @@
             function menu(){document.location='index.html'}
             function settings(){document.location='settings.html'}
             function show(){
+                TEXT.className = 'text';
+                IMAGE.className = 'image';
+                page = PLOT[level][COUNTER];
+                style = page.position;
+                if (style == 'left'){
+                    TEXT.classList.add('left');
+                    IMAGE.classList.add('right');
+                }
+                if (style == 'right'){
+                    TEXT.classList.add('right');
+                    IMAGE.classList.add('left');
+                }
+                if (style == 'middle'){
+                    TEXT.classList.add('middle');
+                    IMAGE.classList.add('hidden');
+                }
                 TEXT.textContent = PLOT[level][COUNTER].text
-                //IMAGE.backgroundImage = 'url(' + PLOT[level][COUNTER].img + ')';
+                IMAGE.backgroundImage = 'url(' + PLOT[level][COUNTER].img + ')';
             }
             function next()
             {
