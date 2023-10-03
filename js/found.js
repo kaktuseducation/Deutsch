@@ -1,4 +1,6 @@
-var ITEMS = document.querySelectorAll('.item');
+const THINGS = document.getElementById('things');
+
+var ITEMS = THINGS.querySelectorAll('image');
 var IDS = [];
 
 for (var i = 0; i < ITEMS.length; i++) {
@@ -43,15 +45,3 @@ function update() {
         document.location='..//test.html';
     } 
 }
-
-/////////////////////////////////////////////////////////////////////////
-dict = {
-    'book': [0,102],
-    'chips': [200,200]
-}
-
-function positions(dict)
-{
-
-}
-
