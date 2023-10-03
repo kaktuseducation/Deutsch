@@ -1,108 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
 body{
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url("../img/menu/sky.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#tree{
+    position: absolute ;
+    height: 100vh;
+    left: 0;
+    z-index: 1;
+}
+
+#human{
+    position: absolute ;
+    height: 40vh;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
 }
 
 .about{
-    background: lightgrey;
-    height: 15vh;
-    width: 26%;
-    position: relative;
-}
-
-.about p{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "gotic";
-    font-size: 3vw;
-}
-
-.act{
-    background: rgb(91, 156, 58);
-    height: 15vh;
-    width: 74%;
-    position: absolute;
-    right: 0;
     top: 0;
+    left: 0;
+    width: 52vh;
+    height: 25vh;
+
+    position: absolute;
+    font-family: "gotic";
+    white-space: normal;
+    font-size: 5vh;
+    
     display: flex;
-    justify-content: flex-end;
+    justify-content: left;
     align-items: center;
+    
+    background-image: url("../img/menu/paper.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 100%;
+
+    z-index: 3;
 }
 
-/* .button-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+#map{
+    position: absolute;
+    top: 25vh;
+    left: 0;
+    width: 31.8vh;
+    height: 12vh;
 
-.act button{
-    font-family: "gotic"; 
-    margin: 2vw;
-    width: 20vw;
-    height: 4vw;
-    background-image: url('../img/menu/button.png');
-    background-size: cover;
+    font-family: "gotic";
+    font-size: 4vh;
+    text-align: left;
+    box-sizing: border-box;
+
+    background-image: url('../img/menu/paper2.png');
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     outline: none;
     background-color: transparent;
-    letter-spacing: 0.5vw;
-    color: #46512F;
+
+    z-index: 3;
 }
 
-.act button:hover{
-    background-image: url('../img/menu/button-select.png');
-    color: #29231E;
+#map:hover{
+    color: #414813;
 }
 
 .symbol{
-    background: lightblue;
-    height: 85vh;
-    width: 26%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: absolute;
+    width: 35vw;
+    height: 25vh;
+    bottom: 0;
+    right: 0;
+
     align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 4;
 }
 
 .flag{
-    position: relative;
-    height: 150px;
-    width: 150px;
+    margin-left: 10%;
+    width: 30%;
+    height: auto;
 }
 
 .emblem{
-    position: relative;
-    height: 100px;
-    width: 100px;
+    margin-right: 10%;
+    width: 30%;
+    height: auto;
 }
 
-/* .artefact{
-    position: relative;
-    height: 100px;
-    width: 100px;
-} */
-
 .content{
-    background: rgb(79, 105, 130);
-    height: 85vh;
-    width: 74%;
     position: absolute;
+    top: 0;
     right: 0;
-    top: 15%;
+    z-index: 4;
+    width: 70vw;
+    height: 75vh;
+    
+    position: absolute;
+    
     box-sizing: border-box;
+    padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    line-height: 1.8;
 
     text-align: center;
     display: flex;
