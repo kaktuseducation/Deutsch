@@ -9,7 +9,9 @@
     <body>
         <div class = "content">
             <div class = "text"></div>
-            <div class = "image"></div>
+            <div class = "image">
+                <img class = "picture">
+            </div>
         </div>
         <div class = "act">
 <!--                 <button class = "btn" onclick = "settings()">Настройки</button> -->
@@ -24,6 +26,7 @@
 
             TEXT = document.querySelector('.text');
             IMAGE = document.querySelector('.image');
+            PICTURE = document.querySelector('.picture');
             
             let level = 1;
             let COUNTER = 0;
@@ -39,17 +42,18 @@
                 if (style == 'left'){
                     TEXT.classList.add('left');
                     IMAGE.classList.add('right');
+                    PICTURE.src = page.src;
                 }
                 if (style == 'right'){
                     TEXT.classList.add('right');
                     IMAGE.classList.add('left');
+                    PICTURE.src = page.src;
                 }
                 if (style == 'middle'){
                     TEXT.classList.add('middle');
                     IMAGE.classList.add('hidden');
                 }
                 TEXT.textContent = PLOT[level][COUNTER].text
-                IMAGE.style.backgroundImage = 'url(' + PLOT[level][COUNTER].img + ')';
             }
             function next()
             {
