@@ -22,9 +22,9 @@ body{
 
 .act button{
     font-family: "gotic"; 
-    margin: 6vw;
+/*     margin: 6vw;
     width: 20vw;
-    height: 4vw;
+    height: 4vw; */
     background-image: url('../img/menu/button.png');
     background-size: cover;
     background-repeat: no-repeat;
