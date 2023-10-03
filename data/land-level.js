@@ -3,8 +3,4 @@ LAND_LEVEL = {
     current: 'Bayern',
     done: []
   },
-  1: {
-    current: 'Berlin',
-    done: ['Bayern']
-  }
 }
