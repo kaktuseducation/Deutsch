@@ -1,5 +1,5 @@
 LANDS = {
-  'Baden-Württemberg' : 'In Bearbeitung',
+  'Baden-Württemberg' : 'Der Text befindet sich in der Entwicklung',
   'Bayern' : 
     `Bayern ist das flächengrößte der 16 Länder Deutschlands. Bayern ist das Bundesland im Südosten von Deutschland und seine Hauptstadt ist München. 
     Der höchste Berg von Bayern und gleichzeitig von ganz Deutschland ist die 2.962 Meter hohe Zugspitze. Außerdem ist Bayern das einzige Bundesland Deutschlands 
@@ -16,7 +16,7 @@ LANDS = {
   'Hessen' : 'Der Text befindet sich in der Entwicklung',
   'Mecklenburg-Vorpommern' : 'Der Text befindet sich in der Entwicklung',
   'Niedersachsen' : 'Der Text befindet sich in der Entwicklung',
-  'Nordrhein-Westfalen' : 'In Bearbeitung',
+  'Nordrhein-Westfalen' : 'Der Text befindet sich in der Entwicklung',
   'Rheinland-Pfalz' : 'Der Text befindet sich in der Entwicklung',
   'Saarland' : 'Der Text befindet sich in der Entwicklung',
   'Sachsen' : 'Der Text befindet sich in der Entwicklung',
