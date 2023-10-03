@@ -102,6 +102,7 @@ body{
     box-sizing: border-box;
     padding-left: 5%;
     padding-right: 5%;
+    line-height: 1.8;
 
     text-align: center;
     display: flex;
