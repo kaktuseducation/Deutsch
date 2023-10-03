@@ -1,5 +1,5 @@
 LAND_LEVEL = {
-  0: {
+  1: {
     current: 'Bayern',
     done: []
   },
