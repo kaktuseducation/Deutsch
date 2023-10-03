@@ -89,6 +89,7 @@ body{
     align-items: center;
     position: absolute;
     font-family: "gotic";
+    line-height: 1.8;
 }
 
 .image{
