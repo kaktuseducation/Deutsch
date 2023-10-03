@@ -15,9 +15,15 @@
         </div>
 
         <div class = "move">
-            <button class = "btn" id = "next" onclick = "next()">---></button>
-            <button class = "btn" id = "back" onclick = "back()"><---</button>
+            <button class = "btn" id = "next" onclick = "next()">Дальше</button>
+            <button class = "btn" id = "back" onclick = "back()">Назад</button>
         </div>
-        
+
+        <script>
+            localStorage.setItem('ref', 'book.html');
+            
+            function map(){document.location='map.html'}
+
+        </script>
     </body>
 </html>
