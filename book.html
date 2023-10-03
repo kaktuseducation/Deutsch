@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Главная страница</title>
-        <link rel="stylesheet" type="text/css" href="css/font.css">
-        <link rel="stylesheet" href="css/book.css">
-    <body>
-        <div class = "content">
-            <div class = "act">
-                <button class = "btn" onclick = "map()">map</button>
-<!--                 <button class = "btn" onclick = "chapters()">chapters</button> -->
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            z-index: 100;
+        }
+        .loader-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #29231E;
+            overflow: hidden;
+        }
 
-        <div class = "move">
-            <button class = "btn" id = "next" onclick = "next()">Дальше</button>
-            <button class = "btn" id = "back" onclick = "back()">Назад</button>
-        </div>
+        .loader-container {
+            display: flex;
+            align-items: center;
+        }
 
-        <script>
-            localStorage.setItem('ref', 'book.html');
-            
+        .text {
+            font-size: 5vw;
+            line-height: 5vw; /* Выравнивание текста по центру по вертикали */
+            white-space: nowrap;
+            color: #ffcc29;
+    </style>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader-container">
+            <div class="text">Moment mal! Wir laden Daten herunter</div>
+            <button class = "btn" onclick = "map()">map</button>
+        </div>
+    </div>
+    <script>
             function map(){document.location='map.html'}
-
-        </script>
-    </body>
+    </script>
+</body> 
 </html>
+
+
+
+
+        
+
