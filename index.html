@@ -34,7 +34,19 @@
         localStorage.setItem('ref', 'index.html');
 
         function settings(){document.location='settings.html'}
-        function game(){document.location='map.html'}
+        function game(){
+            var element = document.documentElement; // Получаем элемент, который хотим перевести в полноэкранный режим
+            if (element.requestFullscreen) {
+            element.requestFullscreen(); // Попытка перейти в полноэкранный режим
+            } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen(); // Firefox
+            } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen(); // Chrome, Safari и Opera
+            } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen(); // Internet Explorer/Edge
+            }
+            document.location='map.html';
+        }
 
         set_fontsize();
         
