@@ -7,39 +7,81 @@
         <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" href="css/land.css">
     <body>
-        <div class = "about">
-            <p class = "name">Название</p>
-        </div>
-        <div class = "symbol">
+        <img id = "tree" src="img/menu/tree.png"></div>
+        <img id = "human" src="img/menu/human.png"></div>
+        <div class = "about"></div>
+        <button id = "map" onclick="map()">zurück</button>
+        <div class="symbol">
             <img class = "flag" alt = "Флаг">
             <img class = "emblem" alt = "Герб">
-<!--             <img class = "artefact" alt = "Артефакт"> -->
-        </div>
-
-        <div class = "act">
-            <div class = "button-contasiner">
-                <button class = "btn" onclick = "map()">Карта</button>
-<!--                 <button class = "btn" onclick = "settings()">Настройки</button> -->
-<!--                 <button class = "btn" onclick = "menu()">Меню</button> -->
-            </div>
         </div>
         <div class = "content"></div>
-        
-        <script src="js/size.js"></script>
+
         <script src="data/lands.js"></script>
         <script>
             localStorage.setItem('ref', 'land.html');
             function map(){document.location='map.html'}
-            // function menu(){document.location='index.html'}
+            function menu(){document.location='index.html'}
             function settings(){document.location='settings.html'}
 
-            set_fontsize();
 
             land = localStorage.getItem('land');
             document.querySelector('.content').textContent = LANDS[land];
-            document.querySelector('.name').textContent = land;
+            document.querySelector('.about').textContent = land;
             document.querySelector('.flag').src = "img/flags/" + land + ".svg";
             document.querySelector('.emblem').src = "img/emblems/" + land + ".svg";
-        </script>
+
+            TEXT = document.querySelector('.content')
+            function size(){
+                let max_length = TEXT.textContent.length;
+                let width = 0.74*window.innerWidth;
+                let height = 0.85*window.innerHeight;
+                let size = Math.sqrt(0.7*width * height / max_length);
+                let space = 0.1*size;
+                TEXT.style.fontSize = size+ 'px';
+                TEXT.style.letterSpacing = space + 'px';
+                TEXT.style.lineHeight = '1.8';
+            }
+            window.addEventListener('resize', size);
+            size();
+
+            const tree = document.getElementById('tree');
+            function size_tree(){
+                if (tree.offsetLeft + tree.offsetWidth > window.innerWidth/3){
+                    tree.style.left = window.innerWidth/3 - tree.offsetWidth + 'px';
+                }
+                else if (parseInt(tree.style.left) < 0){
+                    tree.style.left = window.innerWidth/3 - tree.offsetWidth + 'px';   
+                }
+                else if (document.fullscreenElement)
+                {
+                    tree.style.left = '0px';
+                }
+                if (parseInt(tree.style.left) > 0){
+                    tree.style.left = '0px';
+                }
+            }
+            window.addEventListener('resize', size_tree);
+            size_tree();
+
+            const human = document.getElementById('human');
+            function size_human(){
+                if (human.offsetLeft + human.offsetWidth > 0.4*window.innerWidth){
+                    human.style.left = window.innerWidth/3 - human.offsetWidth + 'px';
+                }
+                else if (parseInt(human.style.left) < 0){
+                    human.style.left = window.innerWidth/3 - human.offsetWidth + 'px';   
+                }
+                else if (document.fullscreenElement)
+                {
+                    human.style.left = '0px';
+                }
+                if (parseInt(tree.style.left) > 0){
+                    human.style.left = '0px';
+                }
+            }
+            window.addEventListener('resize', size_human);
+            size_human(); 
+    </script>
     </body>
 </html>
