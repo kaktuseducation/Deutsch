@@ -55,7 +55,7 @@ body{
     top: 0;
     left: 0%;
     box-sizing: border-box;
-    padding: 15%;
+    padding: 5% 5%;
     
 }
 
@@ -67,7 +67,7 @@ body{
     top: 0;
     right: 0%;
     box-sizing: border-box;
-    padding: 15%;
+    padding: 5% 5%;
 }
 
 .middle{
@@ -79,7 +79,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     box-sizing: border-box;
-    padding: 15%;
+    padding: 5% 5%;
 }
 
 .text{
