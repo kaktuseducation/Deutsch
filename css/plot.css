@@ -7,7 +7,8 @@ body{
     height: 85vh;
     width: 100%;
     background: gray;
-    position: static;
+    position: relative;
+    display: flex;
 }
 
 .act{
@@ -44,4 +45,58 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.left{
+
+    height: 85vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    box-sizing: border-box;
+    padding: 15%;
+    background: blue;
+    
+}
+
+.right{
+
+    height: 85vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    box-sizing: border-box;
+    padding: 15%;
+}
+
+.middle{
+
+    height: 85vh;
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    padding: 15%;
+}
+
+.text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: "gotic";
+}
+
+.image{
+
+    background-size: contain;
+    background-position: center center;
+    background-color: transparent;
+    position: absolute;
+    
 }
