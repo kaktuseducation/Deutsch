@@ -1,44 +1,42 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url("../img/lvl1/library.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .content{
     height: 85vh;
     width: 100%;
-    background: gray;
     position: relative;
     display: flex;
 }
 
 .act{
     display: flex;
-/*     flex-direction: column;
-    justify-content: center; */
+    justify-content: space-between;
     height: 15vh;
-    background: lightblue;
     position: relative;
 }
 
 .act button{
     font-family: "gotic"; 
 /*     margin: 6vw;
-    width: 20vw;
+    
     height: 4vw; */
-    background-image: url('../img/menu/button.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    color: #ffcc29;
+    width: 20vw;
     border: none;
     outline: none;
     background-color: transparent;
     letter-spacing: 0.5vw;
-    color: #46512F;
 }
 
 .act button:hover{
-    background-image: url('../img/menu/button-select.png');
-    color: #29231E;
+    color: #d00;;
 }
 
 .button-container{
@@ -89,7 +87,7 @@ body{
     align-items: center;
     position: absolute;
     font-family: "gotic";
-    line-height: 1.8;
+    color: #ffcc29;
 }
 
 .image{
