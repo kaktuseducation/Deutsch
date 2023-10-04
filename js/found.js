@@ -6,7 +6,12 @@ var board = origin.querySelector('.origin_image');
 var about = document.querySelector('.about');
 var end_lvl = document.querySelector('.end');
 
-TEXT = "ghvh kjiljojoi oijoijioj jiiiojio joiojoijpk[ 'p'lkpok [pk[kpojioh hiuiuhui k;lk p[[p popuouoi pl'pl[pl opoiio [ppjoij hj lknfl;hborihgoir; lkjfboifhdb";
+TEXT = "Hieronymus-im-Gehäus - ist ein Stich von Albrecht Dürer aus dem Jahr 1514 in Nürnberg. 
+Der heilige Hieronymus ist ein Schriftsteller, einer der Lehrer der Kirche. Der Künstler schuf das Bild nicht eines Einsiedlers, sondern eines Wissenschaftlers, der hart in seiner Zelle arbeitet. Der Raum ist von Licht und Komfort durchdrungen. Die gleichmäßigen horizontalen Linien der Komposition unterstreichen die Stimmung des Friedens. Es herrscht eine unerschütterliche Stille. Auf der Schwelle dösen ein Löwe, ein Attribut eines Heiligen, und ein Hund, ein Symbol der Treue. Allerdings tauchen auch hier Symbole auf, die an den Tod erinnern: ein Totenkopf und eine Sanduhr.
+Einer Legende zufolge kam Hieronymus zu dem Zeitpunkt, als er im Kloster lebte, ein lahmer Löwe zu ihm. Alle Mönche flohen, und Jerome untersuchte ruhig die schmerzende Pfote des Löwen und zog einen Splitter daraus heraus. Danach wurde der dankbare Löwe sein ständiger Begleiter.
+Es lohnt sich, auf das Lichtgefühl zu achten, das die gesamte Komposition durchdringt. Aus dem Fenster links vom Betrachter strömen Lichtstrahlen durch das „Mond“-Glas und symbolisieren „spirituelles Licht“, die Einsicht des Wissenschaftlers.
+Interessante Tatsache: Dürer signierte seine Werke mit Initialen in Form eines wunderschönen Autogramms, das er gekonnt in die Komposition des Gemäldes einbezog. Können Sie das Autogramm des großen Meisters finden?
+";
 about.textContent = TEXT;
 
 var ITEMS = THINGS.querySelectorAll('image');
