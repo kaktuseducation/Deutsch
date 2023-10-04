@@ -3,20 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Игра на поиск предметов</title>
+        <title>Land der Märchen</title>
         <link rel="stylesheet" type="text/css" href="../css/font.css">
         <link rel="stylesheet" href="../css/level.css">
     </head>
     <body>
-
-        <div class = "words" id="list"></div>
-        <div class = "act">
-            <div class = "center">
-<!--                 <button class = "btn" onclick = "settings()">Настройки</button> -->
-                <button class = "btn" onclick = "menu()">Меню</button>
-            </div>
+        <div class = "panel">
+			<div class = "up"></div>
+        	<div class = "words" id="list"></div>
+            <button class = "btn" onclick = "menu()"></button>
+			<div class = "down"></div>
         </div>
-
         <div class="ground">
             <svg id="picture" x="0px" y="0px" viewBox="0 0 691 900" preserveAspectRatio="xMidYMid meet">
             	<image style="overflow:visible;" width="691" height="900" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArMAAAOECAYAAACy77m6AAAgAElEQVR4AaTdScxlR3Yf+JvznMmc
