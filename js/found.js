@@ -1,11 +1,18 @@
 const THINGS = document.getElementById('things');
+const PANEL = document.querySelector('.words');
 
 var ITEMS = THINGS.querySelectorAll('image');
 var IDS = [];
 
+var max_lenght = 0;
 for (var i = 0; i < ITEMS.length; i++) {
     IDS.push(ITEMS[i].id);
+    if(ITEMS[i].id.length > max_lenght){
+        max_lenght = ITEMS[i].id.length;
+    }
 }
+const ALL = IDS.length;
+
 update();
 
 ITEMS.forEach(function(item) {
@@ -30,18 +37,28 @@ function update() {
     }
 
     for (var i = 0; i < IDS.length; i++) {
-        var listItem = document.createElement('li');
+        var listItem = document.createElement('p');
+        listItem.classList.add('label')
         listItem.textContent = IDS[i];
-
         listItem.style.fontFamily = 'gotic';
-        listItem.style.fontSize = '35px';
-        listItem.style.letterSpacing = '2px';
-        listItem.style.lineHeight = 1.5;
-
         list.appendChild(listItem);
     }
+
+    set_list();
 
     if (IDS.length == 0){
         document.location='..//test.html';
     } 
 }
+
+
+function set_list(){
+    var labels = document.querySelectorAll('.label');
+    labels.forEach(function(label) {
+        size = Math.min(PANEL.offsetHeight/ALL/2.2, 1.5*PANEL.offsetWidth/max_lenght);
+        label.style.fontSize = size + 'px';
+        label.style.lineHeight = 1.2;
+    });
+}
+set_list();
+window.addEventListener('resize', set_list);
