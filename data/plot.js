@@ -5,7 +5,7 @@
 
 PLOT = {
   1: [
-      {text: 'Eines Tages unternahm Thomas einen Ausflug zu historischen Orten Seiten Deutschlands. Mit einem erfahrenen Guide zusammen drang er ins Innere der Bibliothek vor, wo jedes Buch wie das Tor zu einer Welt voller fantastischer Abenteuer schien. ', 
+      {text: 'Eines Tages unternahm Thomas einen Ausflug zu historischen Seiten Deutschlands. Mit einem erfahrenen Guide zusammen drang er ins Innere der Bibliothek vor, wo jedes Buch wie das Tor zu einer Welt voller fantastischer Abenteuer schien. ', 
        img: 'img/lvl1/back.png', position: 'middle'},
     
       {text: 'Среди безмерных рядов старинных книг, была одна особенная - старейшая из них, с переплетом из коричневой кожи. Внутри этой книги прятались не только легенды и предания. В ней, словно в сокровищнице, хранились древние артефакты, представляющие каждую федеральную землю. ', 
